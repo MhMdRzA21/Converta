@@ -1,0 +1,9 @@
+node_modules
+npm-debug.log
+.git
+.gitignore
+.env
+.env.*
+server/uploads/*
+server/converted/*
+.DS_Store
