@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Converting PDF to Word Without Losing Formatting | Converta</title>
+<meta name="description" content="Why PDF-to-Word conversions shift layout, and the specific things that determine whether yours will come out clean.">
+<link rel="canonical" href="https://YOURDOMAIN.com/guides/pdf-to-word-formatting-tips.html">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a href="/" class="logo"><span class="mark">CV</span> Converta</a>
+    <nav class="site-nav">
+      <a href="/guides/">Guides</a>
+      <a href="/pages/faq.html">FAQ</a>
+      <a href="/pages/about.html">About</a>
+      <a href="/pages/contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main class="content-page">
+  <div class="wrap">
+    <h1>Converting PDF to Word Without Losing Formatting</h1>
+    <p class="updated">A practical guide, not a sales pitch</p>
+
+    <p>Anyone who has converted a PDF to Word and opened the result to find text overlapping, columns collapsed into a single block, or a table turned into a wall of tab characters knows the frustration. The conversion isn't broken — it's doing exactly what it was built to do. The problem is almost always upstream of the conversion itself, in how the PDF was made in the first place.</p>
+
+    <h2>Why layout shifts happen at all</h2>
+    <p>A PDF doesn't store a document the way Word does. Word keeps track of paragraphs, styles, and flow — it knows that a block of text is a heading, or that a column break should push content to the next column. A PDF, by contrast, mostly just records where individual characters sit on a page: this letter at this X/Y coordinate, that letter three pixels to the right. It's a snapshot of the printed result, not a structured document.</p>
+    <p>When you convert a PDF to Word, the conversion engine has to look at that grid of characters and reconstruct a plausible structure — deciding which characters form a paragraph, which form a table cell, which are part of a header versus body text. For simple, single-column documents with standard fonts, this works cleanly almost every time. For dense, multi-column layouts, documents with text wrapped around images, or PDFs exported from design software rather than a word processor, the reconstruction has to make more guesses, and that's where things go sideways.</p>
+
+    <h2>The single biggest factor: how the PDF was created</h2>
+    <p>This matters more than any setting you can tweak during conversion. A PDF exported directly from Word, Google Docs, or LibreOffice ("Save as PDF" or "Export to PDF") retains a lot of that original structure, so the reverse conversion has real information to work with. A PDF that was scanned from a printed page, on the other hand, contains no text at all in the technical sense — it's a photograph of a page. Converting a scanned PDF to Word requires OCR (optical character recognition) to even guess what the words are, and OCR is a fundamentally lossier process than reading structured text. If you're not sure which kind of PDF you have, try selecting text in it with your cursor: if you can highlight individual words, it's a real digital PDF; if the whole page just selects as one image, it's scanned. Our <a href="/guides/scanned-vs-digital-pdf.html">guide to scanned vs. digital PDFs</a> goes into this in more depth.</p>
+
+    <h2>What tends to survive conversion well</h2>
+    <ul>
+      <li><strong>Single-column body text</strong> with standard paragraph formatting — the most common case, and the one conversion tools are best at.</li>
+      <li><strong>Simple tables</strong> with clear row and column boundaries.</li>
+      <li><strong>Standard fonts.</strong> Common system fonts (Arial, Times New Roman, Calibri) map cleanly; unusual or embedded custom fonts sometimes get substituted.</li>
+      <li><strong>Basic formatting</strong> — bold, italic, bullet lists, and heading sizes generally carry over correctly.</li>
+    </ul>
+
+    <h2>What tends to need manual cleanup</h2>
+    <ul>
+      <li><strong>Multi-column layouts</strong>, like newsletters or academic papers — the engine has to guess reading order, and sometimes guesses wrong.</li>
+      <li><strong>Text wrapped tightly around images</strong> — the wrapping behavior itself often doesn't survive, even if the text and image both come through.</li>
+      <li><strong>Nested or merged-cell tables</strong> — complex table structures are the single hardest thing to reconstruct reliably.</li>
+      <li><strong>Headers, footers, and page numbers</strong> — these sometimes get pulled into the body text instead of staying separate.</li>
+    </ul>
+
+    <h2>A realistic workflow</h2>
+    <p>For anything you plan to actually edit afterward, treat the converted .docx as a first draft, not a final file. Convert it, then do a quick pass checking headings, tables, and any layout-heavy sections before you rely on it. For straightforward single-column documents — contracts, letters, plain reports — you can usually trust the output as-is.</p>
+    <p>You can try this yourself with our <a href="/convert/pdf-to-word.html">PDF to Word converter</a> — it's free, and there's no sign-up required to see how a specific file of yours holds up.</p>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <span>© 2026 Converta</span>
+    <nav>
+      <a href="/pages/about.html">About</a>
+      <a href="/pages/privacy.html">Privacy</a>
+      <a href="/pages/terms.html">Terms</a>
+      <a href="/pages/contact.html">Contact</a>
+    </nav>
+  </div>
+</footer>
+</body>
+</html>

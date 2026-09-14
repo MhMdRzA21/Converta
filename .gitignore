@@ -1,0 +1,5 @@
+node_modules/
+server/uploads/*
+server/converted/*
+!server/uploads/.gitkeep
+!server/converted/.gitkeep

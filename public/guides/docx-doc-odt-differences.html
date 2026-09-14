@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DOCX vs. DOC vs. ODT: What's the Difference? | Converta</title>
+<meta name="description" content="What DOCX, DOC, and ODT actually are under the hood, why they're not interchangeable, and which one to use.">
+<link rel="canonical" href="https://YOURDOMAIN.com/guides/docx-doc-odt-differences.html">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a href="/" class="logo"><span class="mark">CV</span> Converta</a>
+    <nav class="site-nav">
+      <a href="/guides/">Guides</a>
+      <a href="/pages/faq.html">FAQ</a>
+      <a href="/pages/about.html">About</a>
+      <a href="/pages/contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main class="content-page">
+  <div class="wrap">
+    <h1>DOCX vs. DOC vs. ODT: What's the Difference?</h1>
+    <p class="updated">Three formats, three different documents under the hood</p>
+
+    <p>They all open as an editable word processor document, and to a casual glance they look the same. But DOCX, DOC, and ODT are built on genuinely different underlying technology, and knowing which is which helps explain the occasional formatting hiccup when you move between them.</p>
+
+    <h2>DOC — the old Microsoft format</h2>
+    <p>DOC was Microsoft Word's default file format from Word 97 through Word 2003. It stores a document in a binary format — data packed in a way that's efficient for the program to read but isn't human-readable and is harder for other software to interpret correctly. Because it's a closed, binary format, DOC files can occasionally lose minor formatting fidelity when opened in non-Microsoft software. It's largely been superseded, but you'll still run into DOC files from older archives, templates, or institutions slow to update their systems.</p>
+
+    <h2>DOCX — the modern Microsoft format</h2>
+    <p>Since Word 2007, DOCX has been the default. The key difference from DOC isn't just the extra letter — DOCX is actually a zip archive containing a set of XML files describing the document's text, formatting, and structure. Being XML-based (and openly documented, under the Office Open XML standard) means other software can parse it much more reliably than the old binary DOC format. This is why DOCX has become the de facto standard that most word processors — including free ones — read and write natively today.</p>
+
+    <h2>ODT — the open standard</h2>
+    <p>ODT (OpenDocument Text) is the default format for LibreOffice Writer and OpenOffice Writer. Like DOCX, it's XML-based and zip-packaged, but it follows a different specification — the OpenDocument Format, an open standard maintained independently of any single company, originally developed by Sun Microsystems and now overseen by OASIS. Functionally, it does the same job as DOCX: paragraphs, styles, images, tables. The main reason to encounter ODT is that it's what LibreOffice and OpenOffice save to by default, and some government and public-sector organizations mandate it specifically because it's a vendor-neutral open standard.</p>
+
+    <h2>Do they actually convert cleanly between each other?</h2>
+    <p>For everyday documents — reports, letters, forms — conversion between all three is generally reliable, since the underlying concepts (paragraphs, headings, tables, images) map closely across formats. Where you can see small shifts is in less common formatting: specific font substitutions if a font isn't available on the system doing the conversion, unusual spacing or indentation rules, or advanced features tied closely to one program, like Word-specific macros or ODT-specific style inheritance. For the vast majority of documents, these are minor and easy to spot-check rather than dealbreakers.</p>
+
+    <h2>Which one should you use?</h2>
+    <ul>
+      <li><strong>Sending a document to someone using Microsoft Word</strong> → DOCX. It's the most universally supported format today.</li>
+      <li><strong>Working exclusively in LibreOffice or OpenOffice</strong> → ODT is a fine default, but export to DOCX before sharing with Word users.</li>
+      <li><strong>Received an old DOC file and need to edit it</strong> → open and re-save as DOCX to bring it up to the modern format.</li>
+      <li><strong>Government or institutional requirement</strong> → follow whatever format they specify; it's often ODT for open-standard compliance reasons.</li>
+    </ul>
+
+    <p>Need to move between any of these? Our <a href="/convert/word-to-pdf.html">Word to PDF</a> tool accepts .docx, .doc, and .odt directly, and the <a href="/convert/pdf-to-word.html">PDF to Word</a> tool outputs standard .docx.</p>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <span>© 2026 Converta</span>
+    <nav>
+      <a href="/pages/about.html">About</a>
+      <a href="/pages/privacy.html">Privacy</a>
+      <a href="/pages/terms.html">Terms</a>
+      <a href="/pages/contact.html">Contact</a>
+    </nav>
+  </div>
+</footer>
+</body>
+</html>

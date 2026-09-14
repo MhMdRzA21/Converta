@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Split PDF Online — Free | Converta</title>
+<meta name="description" content="Split a PDF into separate files online, free, with no sign-up. Extract every page individually, or split into custom page-range chunks.">
+<link rel="canonical" href="https://YOURDOMAIN.com/convert/split-pdf.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Split PDF Online — Free">
+<meta property="og:description" content="Split a PDF into separate files online, free, with no sign-up.">
+<meta property="og:url" content="https://YOURDOMAIN.com/convert/split-pdf.html">
+<meta name="twitter:card" content="summary">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="/css/style.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "Split PDF",
+  "url": "https://YOURDOMAIN.com/convert/split-pdf.html",
+  "applicationCategory": "UtilitiesApplication",
+  "operatingSystem": "Any",
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+  "description": "Split a PDF into separate files online, free, with no sign-up."
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What happens if I leave the page ranges field blank?",
+      "acceptedAnswer": { "@type": "Answer", "text": "The PDF is split into one file per page, and all of them are bundled into a single zip download." }
+    },
+    {
+      "@type": "Question",
+      "name": "How do custom page ranges work?",
+      "acceptedAnswer": { "@type": "Answer", "text": "List ranges like \"1-3, 5, 8-9\" to get one PDF per range instead of one per page." }
+    },
+    {
+      "@type": "Question",
+      "name": "Is my file kept after splitting?",
+      "acceptedAnswer": { "@type": "Answer", "text": "No — the uploaded PDF and the split files are deleted from the server right after you download the result." }
+    }
+  ]
+}
+</script>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a href="/" class="logo"><span class="mark">CV</span> Converta</a>
+    <nav class="site-nav">
+      <a href="/guides/">Guides</a>
+      <a href="/pages/faq.html">FAQ</a>
+      <a href="/pages/about.html">About</a>
+      <a href="/pages/contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap">
+    <h1><span class="page-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><line x1="20" y1="4" x2="8.12" y2="15.88"/><line x1="14.47" y1="14.48" x2="20" y2="20"/><line x1="8.12" y1="8.12" x2="12" y2="12"/></svg></span>Split a PDF</h1>
+    <p class="lede">Pull a PDF apart into separate files — one per page, or by custom page ranges. Free, no account, no watermark.</p>
+
+    <div class="panel" data-endpoint="/api/convert/split-pdf" data-multi="false">
+      <div class="ranges-row">
+        <label for="t-ranges">Page ranges (optional):</label>
+        <input type="text" id="t-ranges" name="ranges" placeholder="e.g. 1-3, 5, 8-9">
+        <p class="hint">Leave blank to split into one PDF per page. Or list ranges to split into custom chunks.</p>
+      </div>
+      <div class="dropzone" tabindex="0">
+      <div class="dropzone-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 16V8"/><path d="m8.5 11.5 3.5-3.5 3.5 3.5"/><path d="M20 16.58A5 5 0 0 0 18 7h-1.26A8 8 0 1 0 4 15.25"/></svg></div>
+        <p>Drop a PDF here, or click to browse</p>
+        <p class="hint">Multiple output files download as a zip</p>
+        <p class="ext">.pdf</p>
+        <input type="file" hidden accept=".pdf">
+      </div>
+      <ul class="filelist"></ul>
+      <div class="actions">
+        <button class="btn-convert" disabled>Split PDF</button>
+        <span class="status"></span>
+      </div>
+      <div class="progress" hidden><div class="progress-bar"></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="trust">
+  <div class="wrap">
+    <h2>How it works</h2>
+    <div class="trust-grid">
+      <div>
+        <h3>1. Add your PDF</h3>
+        <p>Drag and drop a PDF file, or click to browse and select it.</p>
+      </div>
+      <div>
+        <h3>2. Choose how to split</h3>
+        <p>Leave the ranges field blank for one file per page, or enter ranges for custom chunks.</p>
+      </div>
+      <div>
+        <h3>3. Download</h3>
+        <p>A single output downloads directly; multiple outputs download as a zip.</p>
+      </div>
+    </div>
+
+    <h2 style="margin-top:44px">Frequently asked questions</h2>
+    <div class="content-page" style="padding:10px 0 0">
+      <h3 style="font-size:1.05rem">What happens if I leave the page ranges field blank?</h3>
+      <p>The PDF is split into one file per page, and all of them are bundled into a single zip download.</p>
+      <h3 style="font-size:1.05rem">How do custom page ranges work?</h3>
+      <p>List ranges like "1-3, 5, 8-9" to get one PDF per range instead of one per page.</p>
+      <h3 style="font-size:1.05rem">Is my file kept after splitting?</h3>
+      <p>No — the uploaded PDF and the split files are deleted from the server right after you download the result.</p>
+    </div>
+
+    <h2 style="margin-top:44px">Related conversions</h2>
+    <p>
+      <a href="/convert/merge-pdf.html">Merge PDF</a> ·
+      <a href="/convert/pdf-to-jpg.html">PDF to JPG</a> ·
+      <a href="/convert/pdf-to-word.html">PDF to Word</a> ·
+      <a href="/convert/jpg-to-pdf.html">JPG to PDF</a> ·
+      <a href="/convert/word-to-pdf.html">Word to PDF</a> ·
+      <a href="/">All conversion tools</a>
+    </p>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <span>© 2026 Converta</span>
+    <nav>
+      <a href="/pages/about.html">About</a>
+      <a href="/pages/privacy.html">Privacy</a>
+      <a href="/pages/terms.html">Terms</a>
+      <a href="/pages/contact.html">Contact</a>
+    </nav>
+  </div>
+</footer>
+
+<script src="/js/app.js"></script>
+</body>
+</html>
